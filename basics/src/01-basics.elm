@@ -43,13 +43,13 @@ True : Bool
 > isPositiveNumber -333
 False : Bool
 
-> \n -> n < 0
+> n -> n < 0
 <function> : number -> Bool
 
-> (\n -> n < 0) -333
+> (n -> n < 0) -333
 True : Bool
 
-> (\n -> n < 0) 131
+> (n -> n < 0) 131
 False : Bool
 
 > if False then "not this" else "but this"
@@ -58,7 +58,7 @@ False : Bool
 > if True then "this" else "but not this"
 "this" : String
 
-> numberOfTheBeast number = \
+> numberOfTheBeast number = \n
 |   if number == 666 then "It is indeed the number of the beast" else "No beasty here"
 <function> : number -> String
 
@@ -69,8 +69,7 @@ False : Bool
 "It is indeed the number of the beast" : String
 
 > pokemon = ["Bulbasaur", "Charmander", "Squirtle", "Pikachu"]
-["Bulbasaur","Charmander","Squirtle","Pikachu"]
-    : List String
+["Bulbasaur","Charmander","Squirtle","Pikachu"] : List String
 
 > List.isEmpty pokemon
 False : Bool
@@ -115,7 +114,6 @@ True : Bool
 
 > isFirePokemon { name = "Pikachu", element = "Electricity" }
 False : Bool
-
 """
 
 main =
