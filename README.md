@@ -2,6 +2,7 @@
 
 Hi, this is my personal repository in which I will put all of the code that I write in my goal to learn the programming language Elm.
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ---
 
 ## My approach

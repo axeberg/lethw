@@ -1,0 +1,41 @@
+{
+  "name": "lethw",
+  "version": "1.0.0",
+  "description": "Hi, this is my personal repository in which I will put all of the code that I write in my goal to learn the programming language Elm.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@commitlint/prompt": "^8.0.0",
+    "@commitlint/prompt-cli": "^8.0.0",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^2.4.0"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelolsson/lethw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelolsson/lethw/issues"
+  },
+  "homepage": "https://github.com/axelolsson/lethw#readme",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
